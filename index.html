@@ -1,19 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Homepage | Department of Information and Communication Technologies</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Кафедра ІКТ ХАІ — Головна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="/">
+            <img src="images/logo.svg" alt="Логотип кафедри" />
+        </a>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#specialties">Спеціальності</a></li>
+                <li><a href="#numbers">Якщо в числах</a></li>
+                <li><a href="#science">Наука</a></li>
+                <li><a href="#news">Новини</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню">☰</button>
+    </div>
+</header>
 
-    <body>
-        <script src="js/main.js"></script>
-        <h1>Вітаємо на сайті кафедри Інформаційних і
-            коммунікаційних технологій ім. О.О.Зеленського!</h1>
-        <p>Це перший тестовий варіант нашого навчального
-            проекту.</p>
-        <img src="images/logo.svg" alt="Логотип кафедри">
-    </body>
+<main>
+    <section class="banner">
+        <div class="container banner-inner">
+            <div class="banner-text">
+                <h1>Створюй майбутнє. Тут і зараз!</h1>
+                <p>
+                    Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
+                    Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії.
+                    Почни свій шлях вже сьогодні!
+                </p>
+                <a href="#specialties" class="btn">Дізнатись більше</a>
+            </div>
+            <div class="banner-image">
+                <img src="images/banner.jpg" alt="Банер кафедри">
+            </div>
+        </div>
+    </section>
+
+    <section id="specialties" class="section specialties">
+        <div class="container">
+            <h2>Наші спеціальності</h2>
+            <p>
+                Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій
+                за двома напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.
+            </p>
+            <div class="cards">
+                <article class="card">
+                    <h3>172 — Електронні комунікації</h3>
+                    <p>Короткий опис напряму — що изучают, куда можно работать.</p>
+                </article>
+                <article class="card">
+                    <h3>126 — Інформаційні системи та технології</h3>
+                    <p>Короткий опис напряму — приклади дисциплін і кар'єрних шляхів.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="numbers" class="section numbers">
+        <div class="container">
+            <h2>Якщо в числах</h2>
+            <div class="numbers-grid">
+                <div class="num"><strong>200+</strong><span>студентів</span></div>
+                <div class="num"><strong>50</strong><span>проєктів</span></div>
+                <div class="num"><strong>20</strong><span>партнерів</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="reviews" class="section">
+        <h2>Відгуки випускників</h2>
+
+        <div class="review">
+            <p><strong>Іван Петров:</strong> Навчання на кафедрі допомогло мені отримати знання та досвід, які я використовую у своїй роботі в IT-компанії.</p>
+        </div>
+
+        <div class="review">
+            <p><strong>Олена Коваленко:</strong> Дуже вдячна викладачам за підтримку та можливість брати участь у реальних проєктах ще під час навчання.</p>
+        </div>
+
+        <div class="review">
+            <p><strong>Андрій Сидоренко:</strong> Кафедра дала мені міцну базу та контакти з роботодавцями, завдяки чому я швидко знайшов роботу після випуску.</p>
+        </div>
+    </div>
 
 
+    <section id="science" class="section science">
+        <div class="container">
+            <h2>Наука та інновації</h2>
+            <p class="lead">Від аудиторії — до реального проєкту</p>
+            <p>
+                Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах,
+                розробляють ІТ-рішення, створюють стартапи та співпрацюють з компаніями-партнерами.
+                На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання.
+            </p>
+        </div>
+    </section>
+
+    <section class="trust section">
+        <div class="container">
+            <h2>Нам довіряють</h2>
+            <div class="logos">
+                <img src="images/logo-company1.png" alt="Компанія 1">
+                <img src="images/logo-company2.png" alt="Компанія 2">
+                <img src="images/logo-company3.png" alt="Компанія 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Контакти</h2>
+            <p>61070, Харків, вул. Вадима Манька, 17</p>
+            <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+            <p>Email: <a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+            <p>Телефон: <a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+        </div>
+    </section>
+
+    <section id="news" class="section news">
+        <div class="container">
+            <h2>Новини</h2>
+            <div class="news-cards">
+                <article class="news-item">
+                    <h3>Новина 1</h3>
+                    <p>Короткий опис події або оновлення.</p>
+                </article>
+                <article class="news-item">
+                    <h3>Новина 2</h3>
+                    <p>Короткий опис події або оновлення.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <img src="images/logo-footer.svg" alt="Логотип кафедри">
+        <div>
+            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+            <p>61070, Харків, вул. Вадима Манька, 17</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
 </html>

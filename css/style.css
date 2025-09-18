@@ -1,8 +1,123 @@
 body {
+    background: black;
+    color: white;
     font-family: Arial, sans-serif;
-    background-color: #8E8E8E;
-    color: #FFF;
-    max-width: 1280px;
-    margin: 50px auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    padding: 10px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: #333;
     padding: 20px;
+}
+
+.banner h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    max-width: 600px;
+}
+
+.banner img {
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+}
+
+.btn {
+    background: yellow;
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.section {
+    padding: 20px;
+    margin-top: 20px;
+    background: #111;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.cards {
+    margin-top: 10px;
+}
+
+.card {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.numbers-grid {
+    margin-top: 10px;
+}
+
+.num {
+    background: #444;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.trust img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.news-item {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #000;
+    color: #aaa;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.review {
+    background: #222;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #555;
+}
+.review strong {
+    color: yellow;
 }
