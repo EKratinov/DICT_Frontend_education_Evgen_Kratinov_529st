@@ -8,148 +8,275 @@
 </head>
 <body>
 <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
         <a class="logo" href="/">
-            <img src="images/logo.svg" alt="Логотип кафедри" />
+            <img src="images/logo.svg" alt="Логотип кафедри">
         </a>
-        <nav class="main-nav" id="main-nav">
+        <nav id="main-nav">
             <ul>
                 <li><a href="#specialties">Спеціальності</a></li>
+                <li><a href="#program">Освітня програма</a></li>
                 <li><a href="#numbers">Якщо в числах</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
                 <li><a href="#science">Наука</a></li>
                 <li><a href="#news">Новини</a></li>
                 <li><a href="#contact">Контакти</a></li>
+                <li><a href="#feedback">Зворотний зв'язок</a></li>
             </ul>
         </nav>
-        <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню">☰</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Меню">☰</button>
     </div>
 </header>
 
 <main>
     <section class="banner">
-        <div class="container banner-inner">
+        <div class="banner-inner">
             <div class="banner-text">
                 <h1>Створюй майбутнє. Тут і зараз!</h1>
-                <p>
-                    Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
-                    Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії.
-                    Почни свій шлях вже сьогодні!
-                </p>
-                <a href="#specialties" class="btn">Дізнатись більше</a>
+                <p>Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю.</p>
             </div>
-            <div class="banner-image">
-                <img src="images/banner.jpg" alt="Банер кафедри">
+            <div class="banner-img">
+                <img src="images/boy 2.png" alt="Студент">
             </div>
         </div>
     </section>
 
     <section id="specialties" class="section specialties">
-        <div class="container">
-            <h2>Наші спеціальності</h2>
-            <p>
-                Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних та інформаційних технологій
-                за двома напрямками 172 - Електронні комунікації та радіотехніка і 126 - Інформаційні системи та технології.
-            </p>
-            <div class="cards">
-                <article class="card">
-                    <h3>172 — Електронні комунікації</h3>
-                    <p>Короткий опис напряму — що изучают, куда можно работать.</p>
-                </article>
-                <article class="card">
-                    <h3>126 — Інформаційні системи та технології</h3>
-                    <p>Короткий опис напряму — приклади дисциплін і кар'єрних шляхів.</p>
-                </article>
+        <h2>Наші спеціальності</h2>
+        <div class="specialties-grid">
+            <div class="card">
+                <h3>172 — Електронні комунікації</h3>
+                <p>Підготовка фахівців у галузі комунікацій та радіоелектроніки.</p>
+                <span class="card-arrow" aria-hidden="true">➜</span>
+            </div>
+            <div class="card">
+                <h3>126 — Інформаційні системи та технології</h3>
+                <p>Підготовка фахівців у галузі розробки ПЗ та інформаційних систем.</p>
+                <span class="card-arrow" aria-hidden="true">➜</span>
             </div>
         </div>
     </section>
 
-    <section id="numbers" class="section numbers">
+    <section id="program" class="section program">
         <div class="container">
-            <h2>Якщо в числах</h2>
-            <div class="numbers-grid">
-                <div class="num"><strong>200+</strong><span>студентів</span></div>
-                <div class="num"><strong>50</strong><span>проєктів</span></div>
-                <div class="num"><strong>20</strong><span>партнерів</span></div>
+            <h2>Освітня програма "Інжиніринг і програмування інфокомунікаційних систем"</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>1 Семестр</th>
+                    <th>Кредити</th>
+                    <th>2 Семестр</th>
+                    <th>Кредити</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Українська мова</strong></td>
+                    <td>Українська мова за професійним спрямуванням</td>
+                    <td>3.00</td>
+                    <td>Політологія та права людини</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Іноземна мова</strong></td>
+                    <td>Англійська мова</td>
+                    <td>3.00</td>
+                    <td>Англійська мова</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Вища математика</strong></td>
+                    <td>Математичний аналіз</td>
+                    <td>5.00</td>
+                    <td>Лінійна алгебра</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Програмування</strong></td>
+                    <td>Основи програмування</td>
+                    <td>5.00</td>
+                    <td>Об'єктно-орієнтоване програмування</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Фізика</strong></td>
+                    <td>Загальна фізика</td>
+                    <td>4.00</td>
+                    <td>Електрика та магнетизм</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Інформатика</strong></td>
+                    <td>Архітектура комп'ютерів</td>
+                    <td>4.50</td>
+                    <td>Операційні системи</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td><strong>Інші дисципліни</strong></td>
+                    <td>Фізичне виховання</td>
+                    <td></td>
+                    <td>Безпека життєдіяльності</td>
+                    <td>3.00</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="program-description">
+                <h3>Опис дисциплін:</h3>
+                <p><strong>Математичний аналіз</strong> - вивчення диференціального та інтегрального числення.</p>
+                <p><strong>Основи програмування</strong> - алгоритми та структури даних на мові Python.</p>
+                <p><strong>Архітектура комп'ютерів</strong> - принципи роботи комп'ютерних систем та мереж.</p>
+                <p><strong>Об'єктно-орієнтоване програмування</strong> - розробка програм на мові Java.</p>
             </div>
         </div>
     </section>
 
-    <div id="reviews" class="section">
+    <section id="numbers" class="section">
+        <h2>Якщо в числах</h2>
+        <div class="numbers-grid">
+            <div class="num"><strong class="big-num">200+</strong><div class="num-label">студентів</div></div>
+            <div class="num"><strong class="big-num">50</strong><div class="num-label">проєктів</div></div>
+            <div class="num"><strong class="big-num">20</strong><div class="num-label">партнерів</div></div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
         <h2>Відгуки випускників</h2>
-
-        <div class="review">
-            <p><strong>Іван Петров:</strong> Навчання на кафедрі допомогло мені отримати знання та досвід, які я використовую у своїй роботі в IT-компанії.</p>
+        <div class="carousel reviews-carousel" data-interval="5000">
+            <button class="carousel__control prev" aria-label="попередній">‹</button>
+            <div class="carousel__track">
+                <div class="carousel__slide" data-index="0">
+                    <p><strong>Іван Петров:</strong> Дуже задоволений навчанням!</p>
+                </div>
+                <div class="carousel__slide" data-index="1">
+                    <p><strong>Олена Коваленко:</strong> Дякую кафедрі за підтримку!</p>
+                </div>
+                <div class="carousel__slide" data-index="2">
+                    <p><strong>Андрій Сидоренко:</strong> Знання допомогли швидко знайти роботу.</p>
+                </div>
+            </div>
+            <button class="carousel__control next" aria-label="наступний">›</button>
+            <div class="carousel__indicators"></div>
         </div>
+    </section>
 
-        <div class="review">
-            <p><strong>Олена Коваленко:</strong> Дуже вдячна викладачам за підтримку та можливість брати участь у реальних проєктах ще під час навчання.</p>
-        </div>
-
-        <div class="review">
-            <p><strong>Андрій Сидоренко:</strong> Кафедра дала мені міцну базу та контакти з роботодавцями, завдяки чому я швидко знайшов роботу після випуску.</p>
-        </div>
-    </div>
-
-
-    <section id="science" class="section science">
-        <div class="container">
-            <h2>Наука та інновації</h2>
-            <p class="lead">Від аудиторії — до реального проєкту</p>
-            <p>
-                Наші студенти не просто вивчають теорію — вони беруть участь у реальних проєктах,
-                розробляють ІТ-рішення, створюють стартапи та співпрацюють з компаніями-партнерами.
-                На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати себе ще під час навчання.
-            </p>
-        </div>
+    <section id="science" class="section">
+        <h2>Наука та інновації</h2>
+        <img src="images/Science.png" alt="Наукові проєкти">
     </section>
 
     <section class="trust section">
-        <div class="container">
-            <h2>Нам довіряють</h2>
-            <div class="logos">
-                <img src="images/logo-company1.png" alt="Компанія 1">
-                <img src="images/logo-company2.png" alt="Компанія 2">
-                <img src="images/logo-company3.png" alt="Компанія 3">
+        <h2>Нам довіряють</h2>
+        <div class="logos">
+            <img src="images/nix.svg" alt="NIX">
+            <img src="images/gl.svg" alt="GlobalLogic">
+            <img src="images/epam.svg" alt="EPAM">
+            <img src="images/softserve.svg" alt="SoftServe">
+            <img src="images/sigma.svg" alt="Sigma">
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <h2>Новини</h2>
+        <div class="carousel news-carousel" data-interval="6000">
+            <button class="carousel__control prev" aria-label="попередній">‹</button>
+            <div class="carousel__track">
+                <article class="carousel__slide" data-index="0">
+                    <h3>Новина 1</h3>
+                    <img src="images/image (1).png" alt="Новина 1">
+                    <p>Короткий опис події.</p>
+                </article>
+                <article class="carousel__slide" data-index="1">
+                    <h3>Новина 2</h3>
+                    <img src="images/image (2).png" alt="Новина 2">
+                    <p>Ще один опис події.</p>
+                </article>
+                <article class="carousel__slide" data-index="2">
+                    <h3>Новина 3</h3>
+                    <img src="images/image.png" alt="Новина 3">
+                    <p>Фото з події.</p>
+                </article>
+                <article class="carousel__slide" data-index="3">
+                    <h3>Новина 4</h3>
+                    <img src="images/image 4.png" alt="Новина 4" id="news4-img">
+                    <p>Опис новини зі звуком.</p>
+                    <audio id="news4-audio" src="images/file_example_MP3_700KB.mp3"></audio>
+                </article>
             </div>
+            <button class="carousel__control next" aria-label="наступний">›</button>
+            <div class="carousel__indicators"></div>
         </div>
     </section>
 
     <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Контакти</h2>
-            <p>61070, Харків, вул. Вадима Манька, 17</p>
-            <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
-            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
-            <p>Email: <a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
-            <p>Телефон: <a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+        <div class="contact-inner">
+            <div class="contact-logo">
+                <img src="images/logo.svg" alt="Логотип кафедри">
+            </div>
+            <div class="contact-info">
+                <p>61070, Харків, вул. Вадима Манька, 17</p>
+                <p>Email: <a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+                <p>Телефон: <a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+                <div class="socials">
+                    <a href="#"><img src="images/fb.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/telegram.svg" alt="Telegram"></a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="news" class="section news">
+    <section id="feedback" class="section feedback">
         <div class="container">
-            <h2>Новини</h2>
-            <div class="news-cards">
-                <article class="news-item">
-                    <h3>Новина 1</h3>
-                    <p>Короткий опис події або оновлення.</p>
-                </article>
-                <article class="news-item">
-                    <h3>Новина 2</h3>
-                    <p>Короткий опис події або оновлення.</p>
-                </article>
-            </div>
+            <h2>Зворотний зв'язок для абітурієнтів</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="name">ПІБ *</label>
+                    <input type="text" id="name" name="name" required placeholder="Введіть ваше повне ім'я">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Введіть ваш email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введіть ваш телефон">
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Цікавить спеціальність</label>
+                    <select id="specialty" name="specialty">
+                        <option value="">Оберіть спеціальність</option>
+                        <option value="172">172 - Електронні комунікації</option>
+                        <option value="126">126 - Інформаційні системи та технології</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Повідомлення *</label>
+                    <textarea id="message" name="message" required placeholder="Задайте ваше питання або повідомлення..." rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" name="newsletter" checked>
+                        <span>Отримувати новини та інформацію про вступ</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Надіслати заявку</button>
+            </form>
         </div>
     </section>
 </main>
 
 <footer class="site-footer">
-    <div class="container footer-inner">
-        <img src="images/logo-footer.svg" alt="Логотип кафедри">
-        <div>
-            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
-            <p>61070, Харків, вул. Вадима Манька, 17</p>
-        </div>
-    </div>
+    <img src="images/logo.svg" alt="Логотип кафедри">
+    <p>Кафедра інформаційно-комунікаційних технологій №504</p>
 </footer>
 
 <script src="js/main.js"></script>
