@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -11,113 +13,270 @@ header {
     padding: 10px;
 }
 
-header img {
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.logo img {
     height: 50px;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 10px 0 0 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .banner {
     background: #333;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
-.banner h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+.banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.banner p {
-    max-width: 600px;
+.banner-text {
+    flex: 1 1 300px;
 }
 
-.banner img {
-    max-width: 300px;
-    display: block;
-    margin-top: 10px;
+.banner-text h1 {
+    margin: 0 0 12px 0;
+    font-size: 32px;
+    font-weight: 600;
 }
 
-.btn {
-    background: yellow;
-    color: black;
-    padding: 8px 14px;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
+.banner-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.banner-img img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 6px;
 }
 
 .section {
-    padding: 20px;
-    margin-top: 20px;
     background: #111;
+    padding: 20px;
+    margin-top: 18px;
 }
 
 .section h2 {
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 0 14px 0;
 }
 
-.cards {
-    margin-top: 10px;
+.specialties-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #222;
-    padding: 10px;
-    margin-bottom: 10px;
+    background: #1b1b1b;
+    padding: 18px;
+    border-radius: 8px;
+    width: 320px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.card-arrow {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: #bbb;
+    font-size: 18px;
 }
 
 .numbers-grid {
-    margin-top: 10px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .num {
-    background: #444;
-    padding: 10px;
-    margin-bottom: 5px;
+    background: #2a2a2a;
+    padding: 18px 22px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 110px;
 }
 
-.trust img {
-    height: 40px;
-    margin-right: 10px;
+.big-num {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 6px;
 }
 
-.news-item {
-    background: #222;
-    padding: 10px;
-    margin-bottom: 10px;
+.carousel {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.carousel__track {
+    min-height: 140px;
+}
+
+.carousel__slide {
+    display: none;
+    background: #1a1a1a;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.carousel__slide.active {
+    display: block;
+}
+
+.carousel__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.carousel__control.prev {
+    left: -36px;
+}
+
+.carousel__control.next {
+    right: -36px;
+}
+
+.carousel__indicators {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.carousel__indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #555;
+    cursor: pointer;
+}
+
+.carousel__indicators button.active {
+    background: #ffd400;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 6px;
+}
+
+.carousel video {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 6px;
+}
+
+.logos {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.logos img {
+    max-height: 56px;
+    width: auto;
+    opacity: 0.85;
+}
+
+.contact-inner {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-logo img {
+    max-width: 110px;
+    height: auto;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.socials {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socials img {
+    width: 28px;
+    height: 28px;
 }
 
 footer {
     background: #000;
     color: #aaa;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 14px;
     text-align: center;
+    margin-top: 18px;
 }
-.review {
-    background: #222;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-left: 4px solid #555;
-}
-.review strong {
-    color: yellow;
+
+
+@media (max-width: 780px) {
+    .nav-toggle { display: inline-block; }
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 12px;
+        top: 64px;
+        background: #222;
+        padding: 10px;
+        border-radius: 6px;
+        flex-direction: column;
+    }
+    nav.open ul { display: flex; }
+    .specialties-grid { flex-direction: column; align-items: center; }
+    .carousel__control.prev { left: 6px; }
+    .carousel__control.next { right: 6px; }
 }
