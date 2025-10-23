@@ -1,5 +1,6 @@
 console.log("Сайт кафедри завантажено успішно!")
 
+
 var navToggle = document.getElementById("navToggle")
 var mainNav = document.getElementById("main-nav")
 
@@ -8,6 +9,7 @@ if (navToggle) {
         mainNav.classList.toggle("open")
     }
 }
+
 
 var links = document.querySelectorAll("a[href^='#']")
 links.forEach(function(link) {
@@ -23,55 +25,89 @@ links.forEach(function(link) {
     })
 })
 
-function initCarousel(root) {
-    var track = root.querySelector(".carousel__track")
-    var slides = Array.from(track.querySelectorAll(".carousel__slide"))
-    var btnPrev = root.querySelector(".carousel__control.prev")
-    var btnNext = root.querySelector(".carousel__control.next")
-    var indicatorsWrap = root.querySelector(".carousel__indicators")
-    var interval = parseInt(root.dataset.interval, 10) || 6000
-    var idx = 0
-    var timer = null
 
-    slides.forEach(function (s, i) {
-        var btn = document.createElement("button")
-        btn.dataset.index = i
-        btn.addEventListener("click", function () { goTo(i) })
-        indicatorsWrap.appendChild(btn)
+function initCarousel(carousel) {
+    var slides = carousel.querySelectorAll('.carousel__slide')
+    var prevBtn = carousel.querySelector('.prev')
+    var nextBtn = carousel.querySelector('.next')
+    var indicators = carousel.querySelector('.carousel__indicators')
+    var interval = carousel.dataset.interval || 5000
+    var currentIndex = 0
+    var timer
+
+
+    slides.forEach((_, index) => {
+        var dot = document.createElement('button')
+        dot.addEventListener('click', () => showSlide(index))
+        indicators.appendChild(dot)
     })
 
-    var indicators = Array.from(indicatorsWrap.querySelectorAll("button"))
+    var dots = indicators.querySelectorAll('button')
 
-    function activate(i) {
-        slides.forEach(s => s.classList.remove("active"))
-        indicators.forEach(b => b.classList.remove("active"))
-        slides[i].classList.add("active")
-        indicators[i].classList.add("active")
-        idx = i
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'))
+        dots.forEach(dot => dot.classList.remove('active'))
+
+        currentIndex = index
+        slides[currentIndex].classList.add('active')
+        dots[currentIndex].classList.add('active')
     }
 
-    function next() { goTo((idx + 1) % slides.length) }
-    function prev() { goTo((idx - 1 + slides.length) % slides.length) }
-    function goTo(i) { activate(i); resetTimer() }
-    function startTimer() { stopTimer(); timer = setInterval(next, interval) }
-    function stopTimer() { if (timer) clearInterval(timer); timer = null }
-    function resetTimer() { stopTimer(); startTimer() }
+    function nextSlide() {
+        var nextIndex = (currentIndex + 1) % slides.length
+        showSlide(nextIndex)
+    }
 
-    if (btnNext) btnNext.addEventListener("click", next)
-    if (btnPrev) btnPrev.addEventListener("click", prev)
-    if (slides.length) { activate(0); startTimer() }
+    function prevSlide() {
+        var prevIndex = (currentIndex - 1 + slides.length) % slides.length
+        showSlide(prevIndex)
+    }
+
+
+    nextBtn.addEventListener('click', nextSlide)
+    prevBtn.addEventListener('click', prevSlide)
+
+
+    function startTimer() {
+        timer = setInterval(nextSlide, interval)
+    }
+
+    function stopTimer() {
+        clearInterval(timer)
+    }
+
+    carousel.addEventListener('mouseenter', stopTimer)
+    carousel.addEventListener('mouseleave', startTimer)
+
+
+    showSlide(0)
+    startTimer()
 }
 
-document.querySelectorAll(".carousel").forEach(initCarousel)
+
+document.querySelectorAll('.carousel').forEach(initCarousel)
+
 
 var news4Img = document.getElementById('news4-img')
 var news4Audio = document.getElementById('news4-audio')
 
-news4Img.addEventListener('click', () => {
-    if (!news4Audio.paused) {
-        news4Audio.pause()
-        news4Audio.currentTime = 0
-    } else {
-        news4Audio.play()
-    }
-})
+if (news4Img && news4Audio) {
+    news4Img.addEventListener('click', function() {
+        if (news4Audio.paused) {
+            news4Audio.play()
+        } else {
+            news4Audio.pause()
+            news4Audio.currentTime = 0
+        }
+    })
+}
+
+
+var feedbackForm = document.getElementById("feedback-form")
+if (feedbackForm) {
+    feedbackForm.addEventListener("submit", function(e) {
+        e.preventDefault()
+        alert("Дякуємо за ваше звернення!")
+        feedbackForm.reset()
+    })
+}

@@ -15,10 +15,13 @@
         <nav id="main-nav">
             <ul>
                 <li><a href="#specialties">Спеціальності</a></li>
+                <li><a href="#program">Освітня програма</a></li>
                 <li><a href="#numbers">Якщо в числах</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
                 <li><a href="#science">Наука</a></li>
                 <li><a href="#news">Новини</a></li>
                 <li><a href="#contact">Контакти</a></li>
+                <li><a href="#feedback">Зворотний зв'язок</a></li>
             </ul>
         </nav>
         <button class="nav-toggle" id="navToggle" aria-label="Меню">☰</button>
@@ -54,6 +57,82 @@
         </div>
     </section>
 
+    <section id="program" class="section program">
+        <div class="container">
+            <h2>Освітня програма "Інжиніринг і програмування інфокомунікаційних систем"</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>1 Семестр</th>
+                    <th>Кредити</th>
+                    <th>2 Семестр</th>
+                    <th>Кредити</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Українська мова</strong></td>
+                    <td>Українська мова за професійним спрямуванням</td>
+                    <td>3.00</td>
+                    <td>Політологія та права людини</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Іноземна мова</strong></td>
+                    <td>Англійська мова</td>
+                    <td>3.00</td>
+                    <td>Англійська мова</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Вища математика</strong></td>
+                    <td>Математичний аналіз</td>
+                    <td>5.00</td>
+                    <td>Лінійна алгебра</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Програмування</strong></td>
+                    <td>Основи програмування</td>
+                    <td>5.00</td>
+                    <td>Об'єктно-орієнтоване програмування</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Фізика</strong></td>
+                    <td>Загальна фізика</td>
+                    <td>4.00</td>
+                    <td>Електрика та магнетизм</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Інформатика</strong></td>
+                    <td>Архітектура комп'ютерів</td>
+                    <td>4.50</td>
+                    <td>Операційні системи</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td><strong>Інші дисципліни</strong></td>
+                    <td>Фізичне виховання</td>
+                    <td></td>
+                    <td>Безпека життєдіяльності</td>
+                    <td>3.00</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="program-description">
+                <h3>Опис дисциплін:</h3>
+                <p><strong>Математичний аналіз</strong> - вивчення диференціального та інтегрального числення.</p>
+                <p><strong>Основи програмування</strong> - алгоритми та структури даних на мові Python.</p>
+                <p><strong>Архітектура комп'ютерів</strong> - принципи роботи комп'ютерних систем та мереж.</p>
+                <p><strong>Об'єктно-орієнтоване програмування</strong> - розробка програм на мові Java.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="numbers" class="section">
         <h2>Якщо в числах</h2>
         <div class="numbers-grid">
@@ -77,9 +156,6 @@
                 <div class="carousel__slide" data-index="2">
                     <p><strong>Андрій Сидоренко:</strong> Знання допомогли швидко знайти роботу.</p>
                 </div>
-                <div class="carousel__slide" data-index="3">
-                    <p><strong>Марія Іваненко:</strong> Реальні проєкти вже під час навчання!</p>
-                </div>
             </div>
             <button class="carousel__control next" aria-label="наступний">›</button>
             <div class="carousel__indicators"></div>
@@ -98,7 +174,7 @@
             <img src="images/gl.svg" alt="GlobalLogic">
             <img src="images/epam.svg" alt="EPAM">
             <img src="images/softserve.svg" alt="SoftServe">
-            <img src="images/dataart.svg" alt="DataArt">
+            <img src="images/sigma.svg" alt="Sigma">
         </div>
     </section>
 
@@ -147,10 +223,53 @@
                     <a href="#"><img src="images/fb.svg" alt="Facebook"></a>
                     <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
                     <a href="#"><img src="images/telegram.svg" alt="Telegram"></a>
-                    <a href="#"><img src="images/viber.svg" alt="Viber"></a>
-                    <a href="#"><img src="images/in.svg" alt="LinkedIn"></a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="section feedback">
+        <div class="container">
+            <h2>Зворотний зв'язок для абітурієнтів</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="name">ПІБ *</label>
+                    <input type="text" id="name" name="name" required placeholder="Введіть ваше повне ім'я">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Введіть ваш email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введіть ваш телефон">
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Цікавить спеціальність</label>
+                    <select id="specialty" name="specialty">
+                        <option value="">Оберіть спеціальність</option>
+                        <option value="172">172 - Електронні комунікації</option>
+                        <option value="126">126 - Інформаційні системи та технології</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Повідомлення *</label>
+                    <textarea id="message" name="message" required placeholder="Задайте ваше питання або повідомлення..." rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" name="newsletter" checked>
+                        <span>Отримувати новини та інформацію про вступ</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Надіслати заявку</button>
+            </form>
         </div>
     </section>
 </main>
