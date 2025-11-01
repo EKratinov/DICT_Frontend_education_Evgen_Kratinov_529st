@@ -1,0 +1,93 @@
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel__track {
+  position: relative;
+  min-height: 250px;
+}
+
+.carousel__slide {
+  display: none;
+  background: #1a1a1a;
+  padding: 20px;
+  border: 1px solid #8E8E8E;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.carousel__slide.active {
+  display: block;
+}
+
+.carousel.news-carousel .carousel__slide {
+  padding: 10px;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.carousel.news-carousel .carousel__slide:not(:last-child) {
+  border-right: 1px solid #FF3A3A;
+}
+
+.carousel__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel__control.prev {
+  left: 0;
+}
+
+.carousel__control.next {
+  right: 0;
+}
+
+.carousel__control:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.carousel__indicators {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.carousel__indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #555;
+  cursor: pointer;
+}
+
+.carousel__indicators button.active {
+  background: yellow;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 6px;
+  margin: 10px auto;
+  cursor: pointer;
+}

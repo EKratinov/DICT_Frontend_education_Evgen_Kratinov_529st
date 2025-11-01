@@ -1,0 +1,4 @@
+.program { @extend .section; }
+.program table { width: 100%; border-collapse: collapse; background: $color-panel; }
+.program th, .program td { padding: 10px; border: 1px solid #444; text-align: left; }
+.program th { background: #333; color: $color-accent; }

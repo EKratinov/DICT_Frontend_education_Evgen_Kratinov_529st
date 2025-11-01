@@ -1,0 +1,27 @@
+#science {
+  @extend .section;
+  text-align: center;
+  background: $color-panel;
+  padding: $base-padding * 2;
+  box-sizing: border-box;
+
+  h2 {
+    color: $color-text;
+    margin-bottom: $base-padding;
+    word-wrap: break-word;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: inline-block;
+    object-fit: cover;
+  }
+}
+
+@include respond($tablet) {
+  #science {
+    padding: $base-padding;
+  }
+}

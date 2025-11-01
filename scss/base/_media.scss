@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #222;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  .banner-inner {
+    flex-direction: column;
+  }
+
+  .specialties-grid,
+  .numbers-grid,
+  .contact-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel__control.prev {
+    left: 5px;
+  }
+
+  .carousel__control.next {
+    right: 5px;
+  }
+
+  .contact-inner {
+    text-align: center;
+  }
+}

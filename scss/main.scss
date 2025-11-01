@@ -1,0 +1,26 @@
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/breakpoints";
+@import "abstractions/mixins";
+
+@import "base/general";
+@import "base/header";
+@import "base/footer";
+@import "base/media";
+
+@import "components/banner";
+@import "components/numbers";
+@import "components/program";
+@import "components/specialties";
+@import "components/carousel";
+@import "components/science";
+@import "components/logos";
+@import "components/contact";
+@import "components/feedback";
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-base;
+  padding: $base-padding;
+}

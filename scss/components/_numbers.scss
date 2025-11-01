@@ -1,0 +1,15 @@
+.numbers-grid {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
+
+.num {
+  background: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+}
+
+.num:not(:last-child) {
+  border-right: 1px solid #FF3A3A;
+}
