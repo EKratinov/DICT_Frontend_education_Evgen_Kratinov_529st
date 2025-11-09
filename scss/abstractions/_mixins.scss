@@ -1,0 +1,10 @@
+@mixin card($pad: 20px, $radius: 20px, $border: 1px solid $color-grey, $bg: $color-panel) {
+  padding: $pad;
+  border-radius: $radius;
+  border: $border;
+  background: $bg;
+}
+
+@mixin respond($bp) {
+  @media (max-width: $bp) { @content; }
+}
