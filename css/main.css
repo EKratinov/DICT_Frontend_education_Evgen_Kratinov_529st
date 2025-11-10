@@ -1,3 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght@100..900&display=swap");
+:root {
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-dark-1: #222;
+  --color-dark-2: #333;
+  --color-panel: #1a1a1a;
+  --color-panel-2: #2a2a2a;
+  --color-grey: #8e8e8e;
+  --color-line: #444;
+  --color-accent: yellow;
+  --color-red: #ff3a3a;
+  --color-accent-hover: #ff5c5a;
+  --color-highlight: #ffff00;
+  --color-border: #8E8E8E;
+}
+
+body {
+  font-size: 14px;
+  font-family: "comfortaa", sans-serif;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: "Geologica", sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+a {
+  color: var(--color-red);
+  font-weight: 400;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
 body {
   background: black;
   color: white;
@@ -12,7 +88,6 @@ body {
   padding: 20px;
   margin: 40px 0;
 }
-
 .section h2, #science h2, .program h2 {
   text-align: center;
 }
@@ -23,14 +98,13 @@ table {
   margin: 15px 0;
   background: #1a1a1a;
 }
-
-th, td {
+table th,
+table td {
   padding: 10px;
   border: 1px solid #444;
   text-align: left;
 }
-
-th {
+table th {
   background: #333;
   color: yellow;
 }
@@ -39,29 +113,24 @@ header {
   background: #222;
   padding: 20px 0;
 }
-
-.header-inner {
+header .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.logo img {
+header .logo img {
   height: 50px;
 }
-
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   gap: 15px;
 }
-
-nav a {
+header nav a {
   color: white;
   text-decoration: none;
 }
-
-.nav-toggle {
+header .nav-toggle {
   display: none;
   background: none;
   border: none;
@@ -77,41 +146,6 @@ footer {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: #222;
-    padding: 10px;
-    flex-direction: column;
-  }
-  nav.open ul {
-    display: flex;
-  }
-  .banner-inner {
-    flex-direction: column;
-  }
-  .specialties-grid,
-  .numbers-grid,
-  .contact-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-  .carousel__control.prev {
-    left: 5px;
-  }
-  .carousel__control.next {
-    right: 5px;
-  }
-  .contact-inner {
-    text-align: center;
-  }
-}
 .banner {
   background: #333;
   padding: 20px;
@@ -142,7 +176,6 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
 .num:not(:last-child) {
   border-right: 1px solid #FF3A3A;
 }
@@ -184,12 +217,10 @@ footer {
   margin: 0 auto;
   overflow: hidden;
 }
-
 .carousel__track {
   position: relative;
   min-height: 250px;
 }
-
 .carousel__slide {
   display: none;
   background: #1a1a1a;
@@ -198,21 +229,17 @@ footer {
   border-radius: 20px;
   text-align: center;
 }
-
 .carousel__slide.active {
   display: block;
 }
-
 .carousel.news-carousel .carousel__slide {
   padding: 10px;
   background: #1a1a1a;
   border-radius: 8px;
 }
-
 .carousel.news-carousel .carousel__slide:not(:last-child) {
   border-right: 1px solid #FF3A3A;
 }
-
 .carousel__control {
   position: absolute;
   top: 50%;
@@ -230,26 +257,21 @@ footer {
   justify-content: center;
   z-index: 10;
 }
-
 .carousel__control.prev {
   left: 0;
 }
-
 .carousel__control.next {
   right: 0;
 }
-
 .carousel__control:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-
 .carousel__indicators {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-top: 15px;
 }
-
 .carousel__indicators button {
   width: 12px;
   height: 12px;
@@ -258,11 +280,9 @@ footer {
   background: #555;
   cursor: pointer;
 }
-
 .carousel__indicators button.active {
-  background: yellow;
+  background: var(--color-red);
 }
-
 .carousel img {
   max-width: 100%;
   height: auto;
@@ -272,6 +292,39 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #222;
+    padding: 10px;
+    flex-direction: column;
+  }
+  nav.open ul {
+    display: flex;
+  }
+  .banner-inner,
+  .specialties-grid,
+  .numbers-grid,
+  .contact-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel__control.prev {
+    left: 5px;
+  }
+  .carousel__control.next {
+    right: 5px;
+  }
+  .contact-inner {
+    text-align: center;
+  }
+}
 #science {
   text-align: center;
   background: #1a1a1a;
@@ -373,7 +426,7 @@ footer {
 body {
   background: #000;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "comfortaa", sans-serif;
   padding: 20px;
 }
 

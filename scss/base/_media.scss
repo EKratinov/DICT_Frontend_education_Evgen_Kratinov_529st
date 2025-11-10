@@ -3,24 +3,22 @@
     display: block;
   }
 
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: #222;
-    padding: 10px;
-    flex-direction: column;
+  nav { ul {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background: #222;
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    &.open ul {
+      display: flex;
+    }
   }
 
-  nav.open ul {
-    display: flex;
-  }
-
-  .banner-inner {
-    flex-direction: column;
-  }
-
+  .banner-inner,
   .specialties-grid,
   .numbers-grid,
   .contact-inner {

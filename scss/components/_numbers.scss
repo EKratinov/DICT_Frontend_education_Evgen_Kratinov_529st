@@ -8,8 +8,8 @@
   background: #2a2a2a;
   padding: 10px;
   text-align: center;
-}
 
-.num:not(:last-child) {
-  border-right: 1px solid #FF3A3A;
+  &:not(:last-child) {
+    border-right: 1px solid #FF3A3A;
+  }
 }
