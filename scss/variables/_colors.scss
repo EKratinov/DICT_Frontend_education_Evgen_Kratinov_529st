@@ -8,3 +8,23 @@ $color-grey: #8e8e8e;
 $color-line: #444;
 $color-accent: yellow;
 $color-red: #ff3a3a;
+
+$color-accent-hover: #ff5c5a;
+$color-highlight: #ffff00;
+$color-border: #8E8E8E;
+
+:root {
+  --color-bg: #{$color-bg};
+  --color-text: #{$color-text};
+  --color-dark-1: #{$color-dark-1};
+  --color-dark-2: #{$color-dark-2};
+  --color-panel: #{$color-panel};
+  --color-panel-2: #{$color-panel-2};
+  --color-grey: #{$color-grey};
+  --color-line: #{$color-line};
+  --color-accent: #{$color-accent};
+  --color-red: #{$color-red};
+  --color-accent-hover: #{$color-accent-hover};
+  --color-highlight: #{$color-highlight};
+  --color-border: #{$color-border};
+}
