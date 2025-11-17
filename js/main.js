@@ -111,3 +111,19 @@ if (feedbackForm) {
         feedbackForm.reset()
     })
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const uaBtn = document.getElementById("lang-ua");
+    const enBtn = document.getElementById("lang-en");
+
+    uaBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        uaBtn.classList.add("is-active");
+        enBtn.classList.remove("is-active");
+    });
+
+    enBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        enBtn.classList.add("is-active");
+        uaBtn.classList.remove("is-active");
+    });
+});
